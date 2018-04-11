@@ -27,11 +27,11 @@ def process_image(img):
     int_value = get_image_class(img)
 
     if (int_value == 0):
-        cv2.putText(result, 'Zone = ' + str(int_value), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+        cv2.putText(result, 'Predicted = ' + str(int_value), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
     if(int_value == 1):
-        cv2.putText(result,'Zone = '+str(int_value), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
+        cv2.putText(result,'Predicted = '+str(int_value), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2)
     if (int_value == 2):
-        cv2.putText(result, 'Zone = ' + str(int_value), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(result, 'Predicted = ' + str(int_value), (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     '''Here, result is the frame we are considering, int value is the zone value'''
     return result
